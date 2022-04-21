@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --magenta: #EF476F;
+  --yellow: #FFD166;
+  --teal: #06D6A0;
+  --blue: #118AB2;
+  --darkblue: #343F3E;
+  --white: #EFF1F3;
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding-top: 5%;
+}
+
+/* Flex */
+.flex {
+  display:flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+/* nav.php */
+.nav-link-list {
+  justify-content: space-between;
+  align-items: center;
+  width:25%;
+}
+
+.nav-link-list li {
+  height:100%;
+  padding:5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link-list li a {
+  color: var(--white);
+  font-weight: medium;
+  font-size: medium;
+}
+
+/* header.php */
+.header {
+  height: 7vh;
+  background-color: var(--darkblue);
+  padding: 0 10%;
+  justify-content: space-between;
+}
+
+.name-wrap {
+  align-items: center;
+  justify-content: left;
+  width:50%;
+}
+
+.name-wrap a {
+  color: var(--white);
+  font-weight: light;
+  font-size: smaller;
+}
+
+.name {
+  color: var(--white);
+  font-weight: bold;
+  font-size: larger;
+  padding-right: 5%;
+}
+
+
+
+/* https://codepen.io/colloque/pen/poOLPg */
+/* Usage: .effect-underline on a tag */
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
