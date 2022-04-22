@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Overvej anden font til paragraph frem for raleway, en med flere former */
 
 :root {
   --magenta: #EF476F;
@@ -122,7 +124,7 @@ main {
 
 .main-container-left h5 {
   margin-top: 0;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .profile-img {
@@ -165,7 +167,8 @@ main {
 
 /* Does this need a change for 300? */
 .main-container-right p {
-  font-weight: 200;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Interests and hobbies lists */
