@@ -1,7 +1,7 @@
-<header class="header flex">
+<header class="header flex sticky">
   <div class="name-wrap flex">
-    <p class="name">Tobias Neergaard Olesen</p>
-    <a href="#" class="effect-underline">CV</a>
+    <a href="#biography" class="name-wrap-width"><p class="name">Tobias Neergaard Olesen</p></a>
+    <a href="./cv/cv.pdf" class="effect-underline" target="_blank">CV</a>
   </div>
   <?php
   include('nav.php');

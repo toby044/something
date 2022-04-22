@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --magenta: #EF476F;
   --yellow: #FFD166;
   --teal: #06D6A0;
   --blue: #118AB2;
-  --darkblue: #343F3E;
+  --darkgreen: #343F3E;
   --white: #EFF1F3;
 }
 
 * {
   font-family: 'Raleway', sans-serif;
-  list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-html,body {
+html,
+body {
   padding: 0;
   margin: 0;
 }
@@ -24,14 +26,23 @@ main {
   padding-top: 5%;
 }
 
-/* Flex */
-.flex {
-  display:flex;
+.h2-container h2 {
+  padding-right: 2.5%;
 }
 
-.center {
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flex-center {
   justify-content: center;
   align-items: center;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 /* Header */
@@ -39,12 +50,11 @@ main {
 .nav-link-list {
   justify-content: space-between;
   align-items: center;
-  width:25%;
+  width: 18%;
 }
 
 .nav-link-list li {
-  height:100%;
-  padding:5%;
+  height: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -58,15 +68,18 @@ main {
 /* header.php */
 .header {
   height: 7vh;
-  background-color: var(--darkblue);
+  width: 100%;
+  background-color: var(--darkgreen);
   padding: 0 10%;
   justify-content: space-between;
+  z-index: 99;
+  border-bottom: 0.5px solid rgba(239, 241, 243, 0.5);
 }
 
 .name-wrap {
   align-items: center;
   justify-content: left;
-  width:50%;
+  width: 60%;
 }
 
 .name-wrap a {
@@ -75,24 +88,140 @@ main {
   font-size: smaller;
 }
 
+.name-wrap-width {
+  width: 35%;
+}
+
 .name {
   color: var(--white);
   font-weight: bold;
-  font-size: larger;
+  font-size: large;
   padding-right: 5%;
+  margin: 0;
 }
 
 
 
+/* Main */
+/* index.php */
+.main-container {
+  width: 100%;
+  height: 100%;
+  min-height: 93vh;
+  background: var(--darkgreen);
+  padding: 3.5% 10%;
+  justify-content: space-between;
+  color: var(--white);
+}
+
+/* Left side of main */
+.main-container-left {
+  flex-direction: column;
+  width: 30%;
+}
+
+.main-container-left h5 {
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.profile-img {
+  /* border-radius: 50%; */
+  height: 40vh;
+  width: auto;
+}
+
+/* Socials */
+.social-links {
+  padding: 0;
+  height: 6.5vh;
+  justify-content: left;
+  width: 50%;
+}
+
+.social-link {
+  width: 33%;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-link:hover {
+  transform:scale(1.2);
+}
+
+.social-link a {
+  color: var(--white);
+  transform: scale(1.5);
+}
+
+/* Right side of main */
+.main-container-right {
+  width: 65%;
+  flex-direction: column;
+}
+
+.main-container-right h2 {
+  margin: 0;
+}
+
+/* Does this need a change for 300? */
+.main-container-right p {
+  font-weight: 200;
+}
+
+/* Interests and hobbies lists */
+.ih-container {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.interests-list {
+  list-style-type: disc;
+  width: 50%;
+}
+
+.hobbies-list {
+  width: 50%;
+}
+
+/* Education list */
+
+.edu-list h5 {
+  font-weight: 300;
+}
+
+
+
+/* Footer */
+
+footer {
+  height: auto;
+  border-top: 0.5px solid rgba(239, 241, 243, 0.5);
+  background: var(--darkgreen);
+  color: var(--white);
+  padding: 1% 10%;
+}
+
+footer h5 {
+  margin-top:0;
+}
+
+
+
+
+
+
+
+
+
 /* https://codepen.io/colloque/pen/poOLPg */
-/* Usage: .effect-underline on a tag */
+/* Usage: .effect-underline on an "a" tag */
 a {
   text-decoration: none;
   position: relative;
 }
 
 a.effect-underline:after {
-	content: '';
+  content: '';
   position: absolute;
   left: 0;
   display: inline-block;
@@ -101,14 +230,14 @@ a.effect-underline:after {
   border-bottom: 1px solid;
   margin-top: 10px;
   opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
 }
 
 a.effect-underline:hover:after {
   opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
