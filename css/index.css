@@ -160,17 +160,33 @@ main {
 .main-container-right {
   width: 65%;
   flex-direction: column;
+  border-bottom: 0.5px solid rgba(239, 241, 243, 0.5);
 }
 
 .main-container-right h2 {
   margin: 0;
 }
 
-/* Does this need a change for 300? */
+/* Biography */
 .main-container-right p {
   font-weight: 300;
   font-family: 'Poppins', sans-serif;
 }
+
+.biography-dates ul {
+  list-style-type: none;
+}
+
+.biography-dates-fat {
+  padding-left:0;
+  font-weight: 600;
+}
+
+.biography-dates-slim {
+  padding-left:2%;
+  font-weight: 300;
+}
+
 
 /* Interests and hobbies lists */
 .ih-container {
@@ -193,6 +209,31 @@ main {
   font-weight: 300;
 }
 
+/* Projects */
+#projects-hop {
+  width:100%;
+  height: 5vh;
+  background: var(--darkgreen);
+}
+
+.projects-container {
+  width: 100%;
+  background: var(--darkgreen);
+  color: var(--white);
+  height: 90vh;
+  padding: 3.5% 10%;
+}
+
+.projects-container-left {
+  width: 30%;
+}
+.projects-container-left h2{
+  margin:0;
+}
+
+.projects-container-right {
+  width: 65%;
+}
 
 
 /* Footer */

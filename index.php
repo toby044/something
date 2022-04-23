@@ -8,6 +8,7 @@ include('./modules/head.php');
   <?php
   include('./modules/header.php');
   ?>
+  <!-- Main container with biographyi, profile img, interests and social media -->
   <main class="main-container flex" id="biography">
 
     <!-- Containing image of myself with title and social links -->
@@ -28,9 +29,17 @@ include('./modules/head.php');
     <!-- Containing descriptions of myself and my interests -->
     <div class="flex main-container-right">
       <h2>Biography</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet nisl purus in mollis nunc sed id. Massa sed elementum tempus egestas sed. Malesuada bibendum arcu vitae elementum. Feugiat in ante metus dictum at. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Mattis vulputate enim nulla aliquet porttitor lacus. Amet cursus sit amet dictum. Nulla facilisi morbi tempus iaculis urna id volutpat lacus. Faucibus pulvinar elementum integer enim neque volutpat. Ullamcorper morbi tincidunt ornare massa. Nunc sed id semper risus in hendrerit gravida rutrum. Posuere morbi leo urna molestie at elementum eu facilisis. Pharetra convallis posuere morbi leo. Pharetra vel turpis nunc eget. Cursus turpis massa tincidunt dui ut ornare. Amet justo donec enim diam vulputate ut pharetra. Mi quis hendrerit dolor magna. Nunc non blandit massa enim nec dui. Odio facilisis mauris sit amet massa.
-      </p>
+      <div class="flex biography-dates">
+        <ul class="biography-dates-fat">
+          <li>1997</li>
+          <li>2021</li>
+        </ul>
+        <ul class="biography-dates-slim">
+          <li>Born in Tønder, Denmark</li>
+          <li>Completed Multimediadesigner AK at IBA, Erhvervsakademi Kolding</li>
+        </ul>
+      </div>
+
       <p>
         Odio morbi quis commodo odio aenean sed adipiscing diam donec. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis. Eu facilisis sed odio morbi quis commodo odio. Et netus et malesuada fames. Ac placerat vestibulum lectus mauris ultrices eros in cursus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Aliquam sem et tortor consequat. Imperdiet dui accumsan sit amet nulla facilisi morbi. Non tellus orci ac auctor augue mauris augue. Suspendisse sed nisi lacus sed viverra. Duis at tellus at urna condimentum mattis. In nisl nisi scelerisque eu. Neque vitae tempus quam pellentesque. Scelerisque varius morbi enim nunc faucibus a pellentesque.
       </p>
@@ -41,9 +50,9 @@ include('./modules/head.php');
       <div class="flex ih-container">
         <ul class="interests-list">
           <li class="interests-list-item">Front-end Development</li>
-          <li class="interests-list-item">Frameworks</li>
+          <li class="interests-list-item">Developer frameworks</li>
           <li class="interests-list-item">Progressive webapps</li>
-          <li class="interests-list-item">Reuseability</li>
+          <li class="interests-list-item">Library reuseability</li>
         </ul>
         <ul class="hobbies-list">
           <li class="hobbies-list-item">Tabletennis</li>
@@ -74,8 +83,17 @@ include('./modules/head.php');
       </ul>
     </div>
   </main>
+  <div id="projects-hop"></div>
+  <div class="projects-container flex" id="projects-container">
+    <div class="projects-container-left">
+      <h2>Projects</h2>
+    </div>
+    <div class="projects-container-right">
+    </div>
+  </div>
+
   <footer>
-    <h5>Contact</h5>
+    <h4>Contact</h4>
     <ul class="contact-list" id="contact-list">
       <li class="contact-list-item">Email: tnowebdk@gmail.com</li>
       <li class="contact-list-item">Phone: +45 22 21 79 24</li>
