@@ -65,7 +65,6 @@ include('./modules/head.php');
       <!-- Education -->
       <div class="h2-container flex">
         <h2>Education</h2>
-        <img src="./img/icons/iconmonstr-education-1.svg">
       </div>
       <ul class="edu-list">
         <li class="edu-list-item">
@@ -87,8 +86,30 @@ include('./modules/head.php');
   <div class="projects-container flex" id="projects-container">
     <div class="projects-container-left">
       <h2>Projects</h2>
+      <p>Projects are a fun and entertaining way to improve skills and get a better understand of what you're creating. These are some of my school projects that i've enjoyed making.</p>
     </div>
-    <div class="projects-container-right">
+    <div class="projects-container-right flex">
+      <div class="project-container flex">
+        <div class="project-container-text">
+          <h4>To-do list</h4>
+          <p>Technologies used: HTML, CSS, MySQL, JavaScript</p>
+        </div>
+        <a href="./projects/todoproject/index.php"><img src="./img/profilepicture.jpeg"></a>
+      </div>
+      <div class="project-container flex">
+        <div class="project-container-text">
+          <h4>Sightseeing</h4>
+          <p>Technologies used: HTML, CSS, MySQL, JavaScript, curl</p>
+        </div>
+        <a href="./projects/todoproject/index.php"><img src="./img/profilepicture.jpeg"></a>
+      </div>
+      <div class="project-container flex">
+        <div class="project-container-text">
+          <h4>Sightseeing</h4>
+          <p>Technologies used: HTML, CSS, MySQL, JavaScript, curl</p>
+        </div>
+        <a href="./projects/todoproject/index.php"><img src="./img/profilepicture.jpeg"></a>
+      </div>
     </div>
   </div>
 
